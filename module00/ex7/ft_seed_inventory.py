@@ -9,7 +9,3 @@ def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
     else:
         print("Unknown unit type")
         return
-
-
-if __name__ == "__main__":
-    ft_seed_inventory("tomate", 1, "packets")
