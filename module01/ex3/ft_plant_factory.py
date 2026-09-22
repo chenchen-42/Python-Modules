@@ -17,23 +17,20 @@ class Plant:
               f"{self.age} days old")
 
 
-def ft_plant_growth() -> None:
-    print("=== Garden Plant Growth ===")
+def ft_plant_factory() -> None:
+    print("=== Plant Factory ===")
 
-    rose = Plant("Rose", 25.0, 30, 0.8)
-    rose.show()
+    plants = [
+        Plant("Rose", 25.0, 30, 0.8),
+        Plant("Sunflower", 80.0, 45, 2.5),
+        Plant("Cactus", 15.0, 120, 0.1),
+        Plant("Tulip", 18.0, 20, 1.0),
+        Plant("Fern", 10.0, 60, 0.4),
+    ]
 
-    start_height = rose.height
-
-    for day in range(1, 8):
-        print(f"=== Day {day} ===")
-        rose.grow()
-        rose.age_up()
-        rose.show()
-
-    weekly_growth = rose.height - start_height
-    print(f"Growth this week: {round(weekly_growth, 1)}cm")
+    for plant in plants:
+        plant.show()
 
 
 if __name__ == "__main__":
-    ft_plant_growth()
+    ft_plant_factory()
