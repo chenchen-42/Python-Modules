@@ -8,7 +8,7 @@ def input_temperature(temp_str: str) -> int:
 
 
 def test_temperature() -> None:
-    print("=== Garden Temperature ===")
+    print("=== Garden Temperature Checker ===")
     print("")
     temperature = ["25", "abc", "100", "-50"]
     for values in temperature:
